@@ -4,6 +4,9 @@ Sergey Vilov and Matthias Heinig
 
 [bioRxiv preprint](https://doi.org/10.1101/2024.02.09.579631)
 
+Foundation models, such as DNABERT and Nucleotide Transformer have recently shaped a new direction in DNA research. Trained in an unsupervised manner on a vast quantity of genomic data, they can be used for a variety of downstream tasks, such as promoter prediction, DNA methylation prediction, gene network prediction or functional variant prioritization. However, these models are often trained and evaluated on entire genomes, neglecting genome partitioning into different functional regions. In our study, we investigate the efficacy of various unsupervised approaches, including genome-wide and 3’UTR-specific foundation models on human 3’UTR regions.  To this end, we train a set of popular transformer architectures on a 3’UTR-specific dataset comprising 3,783,714 3’UTR sequences (6.6B bp) of 241 Zoonomia species. Our evaluation includes downstream tasks specific for RNA biology, such as recognition of binding motifs of RNA binding proteins, detection of functional genetic variants, prediction of expression levels in massively parallel reporter assays, and estimation of mRNA half-life. Remarkably, models specifically trained on 3’UTR sequences demonstrate superior performance when compared to established genome-wide foundation models in three out of four downstream tasks. Our results underscore the importance of considering genome partitioning into distinct functional regions when training and evaluating foundation models. In addition, the proposed set of 3’UTR-specific tasks can be used for benchmarking of future models.
+
+
 ## Codes for data preprocessing and analysis
 
 * [rbp_motifs](rbp_motifs/) : evaluate the models on RBP binding motifs prediction (TASK 1)
